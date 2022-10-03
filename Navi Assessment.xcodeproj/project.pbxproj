@@ -1,0 +1,747 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A934E0E428E87A9900837AB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A934E0E328E87A9900837AB9 /* AppDelegate.swift */; };
+		A934E0E628E87A9900837AB9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A934E0E528E87A9900837AB9 /* SceneDelegate.swift */; };
+		A934E0EB28E87A9900837AB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A934E0E928E87A9900837AB9 /* Main.storyboard */; };
+		A934E0ED28E87A9A00837AB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A934E0EC28E87A9A00837AB9 /* Assets.xcassets */; };
+		A934E0F028E87A9A00837AB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A934E0EE28E87A9A00837AB9 /* LaunchScreen.storyboard */; };
+		A934E0FB28E87A9A00837AB9 /* Navi_AssessmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A934E0FA28E87A9A00837AB9 /* Navi_AssessmentTests.swift */; };
+		A934E10528E87A9A00837AB9 /* Navi_AssessmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A934E10428E87A9A00837AB9 /* Navi_AssessmentUITests.swift */; };
+		A934E10728E87A9A00837AB9 /* Navi_AssessmentUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A934E10628E87A9A00837AB9 /* Navi_AssessmentUITestsLaunchTests.swift */; };
+		A934E11828EAD31200837AB9 /* PullRequestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A934E11728EAD31200837AB9 /* PullRequestViewModel.swift */; };
+		A934E11C28EAD33D00837AB9 /* PullRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A934E11A28EAD33D00837AB9 /* PullRequestViewController.swift */; };
+		A934E12128EAD3CF00837AB9 /* PullRequestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A934E11F28EAD3CF00837AB9 /* PullRequestTableViewCell.swift */; };
+		A934E12228EAD3CF00837AB9 /* PullRequestTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A934E12028EAD3CF00837AB9 /* PullRequestTableViewCell.xib */; };
+		A934E12628EADA1300837AB9 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A934E12528EADA1300837AB9 /* APIManager.swift */; };
+		A934E12828EADA7400837AB9 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A934E12728EADA7400837AB9 /* APIRouter.swift */; };
+		A934E13128EADB7F00837AB9 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = A934E13028EADB7F00837AB9 /* SDWebImage */; };
+		A934E13428EADB9000837AB9 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = A934E13328EADB9000837AB9 /* Alamofire */; };
+		A934E13728EADBED00837AB9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A934E13628EADBED00837AB9 /* Constants.swift */; };
+		A934E13928EAFA4800837AB9 /* PullRequestResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A934E13828EAFA4800837AB9 /* PullRequestResponseModel.swift */; };
+		A934E13C28EB173600837AB9 /* PullRquestUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A934E13B28EB173600837AB9 /* PullRquestUtilities.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A934E0F728E87A9A00837AB9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A934E0D828E87A9900837AB9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A934E0DF28E87A9900837AB9;
+			remoteInfo = "Navi Assessment";
+		};
+		A934E10128E87A9A00837AB9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A934E0D828E87A9900837AB9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A934E0DF28E87A9900837AB9;
+			remoteInfo = "Navi Assessment";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A934E0E028E87A9900837AB9 /* Navi Assessment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Navi Assessment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A934E0E328E87A9900837AB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A934E0E528E87A9900837AB9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A934E0EA28E87A9900837AB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A934E0EC28E87A9A00837AB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A934E0EF28E87A9A00837AB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A934E0F128E87A9A00837AB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A934E0F628E87A9A00837AB9 /* Navi AssessmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Navi AssessmentTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A934E0FA28E87A9A00837AB9 /* Navi_AssessmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navi_AssessmentTests.swift; sourceTree = "<group>"; };
+		A934E10028E87A9A00837AB9 /* Navi AssessmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Navi AssessmentUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A934E10428E87A9A00837AB9 /* Navi_AssessmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navi_AssessmentUITests.swift; sourceTree = "<group>"; };
+		A934E10628E87A9A00837AB9 /* Navi_AssessmentUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navi_AssessmentUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A934E11728EAD31200837AB9 /* PullRequestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequestViewModel.swift; sourceTree = "<group>"; };
+		A934E11A28EAD33D00837AB9 /* PullRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequestViewController.swift; sourceTree = "<group>"; };
+		A934E11F28EAD3CF00837AB9 /* PullRequestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequestTableViewCell.swift; sourceTree = "<group>"; };
+		A934E12028EAD3CF00837AB9 /* PullRequestTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PullRequestTableViewCell.xib; sourceTree = "<group>"; };
+		A934E12528EADA1300837AB9 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		A934E12728EADA7400837AB9 /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
+		A934E13628EADBED00837AB9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A934E13828EAFA4800837AB9 /* PullRequestResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequestResponseModel.swift; sourceTree = "<group>"; };
+		A934E13B28EB173600837AB9 /* PullRquestUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRquestUtilities.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A934E0DD28E87A9900837AB9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A934E13128EADB7F00837AB9 /* SDWebImage in Frameworks */,
+				A934E13428EADB9000837AB9 /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A934E0F328E87A9A00837AB9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A934E0FD28E87A9A00837AB9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A934E0D728E87A9900837AB9 = {
+			isa = PBXGroup;
+			children = (
+				A934E0E228E87A9900837AB9 /* Navi Assessment */,
+				A934E0F928E87A9A00837AB9 /* Navi AssessmentTests */,
+				A934E10328E87A9A00837AB9 /* Navi AssessmentUITests */,
+				A934E0E128E87A9900837AB9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A934E0E128E87A9900837AB9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A934E0E028E87A9900837AB9 /* Navi Assessment.app */,
+				A934E0F628E87A9A00837AB9 /* Navi AssessmentTests.xctest */,
+				A934E10028E87A9A00837AB9 /* Navi AssessmentUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A934E0E228E87A9900837AB9 /* Navi Assessment */ = {
+			isa = PBXGroup;
+			children = (
+				A934E12328EAD47A00837AB9 /* Application */,
+				A934E12428EAD9E200837AB9 /* API client */,
+				A934E11E28EAD34600837AB9 /* View */,
+				A934E11928EAD31900837AB9 /* Controller */,
+				A934E11628EAD2DA00837AB9 /* ViewModel */,
+				A934E11328E87AD400837AB9 /* Model */,
+				A934E13A28EB171500837AB9 /* Utils */,
+				A934E13528EADBDA00837AB9 /* Resources */,
+				A934E0E928E87A9900837AB9 /* Main.storyboard */,
+				A934E0EE28E87A9A00837AB9 /* LaunchScreen.storyboard */,
+				A934E0F128E87A9A00837AB9 /* Info.plist */,
+			);
+			path = "Navi Assessment";
+			sourceTree = "<group>";
+		};
+		A934E0F928E87A9A00837AB9 /* Navi AssessmentTests */ = {
+			isa = PBXGroup;
+			children = (
+				A934E0FA28E87A9A00837AB9 /* Navi_AssessmentTests.swift */,
+			);
+			path = "Navi AssessmentTests";
+			sourceTree = "<group>";
+		};
+		A934E10328E87A9A00837AB9 /* Navi AssessmentUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A934E10428E87A9A00837AB9 /* Navi_AssessmentUITests.swift */,
+				A934E10628E87A9A00837AB9 /* Navi_AssessmentUITestsLaunchTests.swift */,
+			);
+			path = "Navi AssessmentUITests";
+			sourceTree = "<group>";
+		};
+		A934E11328E87AD400837AB9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A934E13828EAFA4800837AB9 /* PullRequestResponseModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A934E11628EAD2DA00837AB9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A934E11728EAD31200837AB9 /* PullRequestViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A934E11928EAD31900837AB9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A934E11A28EAD33D00837AB9 /* PullRequestViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A934E11E28EAD34600837AB9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A934E11F28EAD3CF00837AB9 /* PullRequestTableViewCell.swift */,
+				A934E12028EAD3CF00837AB9 /* PullRequestTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A934E12328EAD47A00837AB9 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				A934E0E328E87A9900837AB9 /* AppDelegate.swift */,
+				A934E0E528E87A9900837AB9 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		A934E12428EAD9E200837AB9 /* API client */ = {
+			isa = PBXGroup;
+			children = (
+				A934E12528EADA1300837AB9 /* APIManager.swift */,
+				A934E12728EADA7400837AB9 /* APIRouter.swift */,
+			);
+			path = "API client";
+			sourceTree = "<group>";
+		};
+		A934E13528EADBDA00837AB9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A934E0EC28E87A9A00837AB9 /* Assets.xcassets */,
+				A934E13628EADBED00837AB9 /* Constants.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A934E13A28EB171500837AB9 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A934E13B28EB173600837AB9 /* PullRquestUtilities.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A934E0DF28E87A9900837AB9 /* Navi Assessment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A934E10A28E87A9A00837AB9 /* Build configuration list for PBXNativeTarget "Navi Assessment" */;
+			buildPhases = (
+				A934E0DC28E87A9900837AB9 /* Sources */,
+				A934E0DD28E87A9900837AB9 /* Frameworks */,
+				A934E0DE28E87A9900837AB9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Navi Assessment";
+			packageProductDependencies = (
+				A934E13028EADB7F00837AB9 /* SDWebImage */,
+				A934E13328EADB9000837AB9 /* Alamofire */,
+			);
+			productName = "Navi Assessment";
+			productReference = A934E0E028E87A9900837AB9 /* Navi Assessment.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A934E0F528E87A9A00837AB9 /* Navi AssessmentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A934E10D28E87A9A00837AB9 /* Build configuration list for PBXNativeTarget "Navi AssessmentTests" */;
+			buildPhases = (
+				A934E0F228E87A9A00837AB9 /* Sources */,
+				A934E0F328E87A9A00837AB9 /* Frameworks */,
+				A934E0F428E87A9A00837AB9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A934E0F828E87A9A00837AB9 /* PBXTargetDependency */,
+			);
+			name = "Navi AssessmentTests";
+			productName = "Navi AssessmentTests";
+			productReference = A934E0F628E87A9A00837AB9 /* Navi AssessmentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A934E0FF28E87A9A00837AB9 /* Navi AssessmentUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A934E11028E87A9A00837AB9 /* Build configuration list for PBXNativeTarget "Navi AssessmentUITests" */;
+			buildPhases = (
+				A934E0FC28E87A9A00837AB9 /* Sources */,
+				A934E0FD28E87A9A00837AB9 /* Frameworks */,
+				A934E0FE28E87A9A00837AB9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A934E10228E87A9A00837AB9 /* PBXTargetDependency */,
+			);
+			name = "Navi AssessmentUITests";
+			productName = "Navi AssessmentUITests";
+			productReference = A934E10028E87A9A00837AB9 /* Navi AssessmentUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A934E0D828E87A9900837AB9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					A934E0DF28E87A9900837AB9 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					A934E0F528E87A9A00837AB9 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = A934E0DF28E87A9900837AB9;
+					};
+					A934E0FF28E87A9A00837AB9 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = A934E0DF28E87A9900837AB9;
+					};
+				};
+			};
+			buildConfigurationList = A934E0DB28E87A9900837AB9 /* Build configuration list for PBXProject "Navi Assessment" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A934E0D728E87A9900837AB9;
+			packageReferences = (
+				A934E12F28EADB7F00837AB9 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				A934E13228EADB9000837AB9 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			productRefGroup = A934E0E128E87A9900837AB9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A934E0DF28E87A9900837AB9 /* Navi Assessment */,
+				A934E0F528E87A9A00837AB9 /* Navi AssessmentTests */,
+				A934E0FF28E87A9A00837AB9 /* Navi AssessmentUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A934E0DE28E87A9900837AB9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A934E0F028E87A9A00837AB9 /* LaunchScreen.storyboard in Resources */,
+				A934E0ED28E87A9A00837AB9 /* Assets.xcassets in Resources */,
+				A934E0EB28E87A9900837AB9 /* Main.storyboard in Resources */,
+				A934E12228EAD3CF00837AB9 /* PullRequestTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A934E0F428E87A9A00837AB9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A934E0FE28E87A9A00837AB9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A934E0DC28E87A9900837AB9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A934E11828EAD31200837AB9 /* PullRequestViewModel.swift in Sources */,
+				A934E13C28EB173600837AB9 /* PullRquestUtilities.swift in Sources */,
+				A934E13928EAFA4800837AB9 /* PullRequestResponseModel.swift in Sources */,
+				A934E11C28EAD33D00837AB9 /* PullRequestViewController.swift in Sources */,
+				A934E12128EAD3CF00837AB9 /* PullRequestTableViewCell.swift in Sources */,
+				A934E0E428E87A9900837AB9 /* AppDelegate.swift in Sources */,
+				A934E12828EADA7400837AB9 /* APIRouter.swift in Sources */,
+				A934E0E628E87A9900837AB9 /* SceneDelegate.swift in Sources */,
+				A934E12628EADA1300837AB9 /* APIManager.swift in Sources */,
+				A934E13728EADBED00837AB9 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A934E0F228E87A9A00837AB9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A934E0FB28E87A9A00837AB9 /* Navi_AssessmentTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A934E0FC28E87A9A00837AB9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A934E10728E87A9A00837AB9 /* Navi_AssessmentUITestsLaunchTests.swift in Sources */,
+				A934E10528E87A9A00837AB9 /* Navi_AssessmentUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A934E0F828E87A9A00837AB9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A934E0DF28E87A9900837AB9 /* Navi Assessment */;
+			targetProxy = A934E0F728E87A9A00837AB9 /* PBXContainerItemProxy */;
+		};
+		A934E10228E87A9A00837AB9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A934E0DF28E87A9900837AB9 /* Navi Assessment */;
+			targetProxy = A934E10128E87A9A00837AB9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A934E0E928E87A9900837AB9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A934E0EA28E87A9900837AB9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A934E0EE28E87A9A00837AB9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A934E0EF28E87A9A00837AB9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A934E10828E87A9A00837AB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A934E10928E87A9A00837AB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A934E10B28E87A9A00837AB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZD82WN996Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Navi Assessment/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Madhvendra.Navi-Assessment";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A934E10C28E87A9A00837AB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZD82WN996Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Navi Assessment/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Madhvendra.Navi-Assessment";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A934E10E28E87A9A00837AB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZD82WN996Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Madhvendra.Navi-AssessmentTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Navi Assessment.app/Navi Assessment";
+			};
+			name = Debug;
+		};
+		A934E10F28E87A9A00837AB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZD82WN996Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Madhvendra.Navi-AssessmentTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Navi Assessment.app/Navi Assessment";
+			};
+			name = Release;
+		};
+		A934E11128E87A9A00837AB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZD82WN996Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Madhvendra.Navi-AssessmentUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Navi Assessment";
+			};
+			name = Debug;
+		};
+		A934E11228E87A9A00837AB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZD82WN996Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Madhvendra.Navi-AssessmentUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Navi Assessment";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A934E0DB28E87A9900837AB9 /* Build configuration list for PBXProject "Navi Assessment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A934E10828E87A9A00837AB9 /* Debug */,
+				A934E10928E87A9A00837AB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A934E10A28E87A9A00837AB9 /* Build configuration list for PBXNativeTarget "Navi Assessment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A934E10B28E87A9A00837AB9 /* Debug */,
+				A934E10C28E87A9A00837AB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A934E10D28E87A9A00837AB9 /* Build configuration list for PBXNativeTarget "Navi AssessmentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A934E10E28E87A9A00837AB9 /* Debug */,
+				A934E10F28E87A9A00837AB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A934E11028E87A9A00837AB9 /* Build configuration list for PBXNativeTarget "Navi AssessmentUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A934E11128E87A9A00837AB9 /* Debug */,
+				A934E11228E87A9A00837AB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A934E12F28EADB7F00837AB9 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		A934E13228EADB9000837AB9 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A934E13028EADB7F00837AB9 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A934E12F28EADB7F00837AB9 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		A934E13328EADB9000837AB9 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A934E13228EADB9000837AB9 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = A934E0D828E87A9900837AB9 /* Project object */;
+}
